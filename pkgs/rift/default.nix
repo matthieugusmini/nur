@@ -9,11 +9,11 @@ system ? builtins.currentSystem
 }:
 let
   shaMap = {
-    i686-linux = "02a5mhpah8ycwglzp71pidyk8qcx05d3sridi2xfrcxg56biv9rm";
-    x86_64-linux = "1rd1i1s758sb409p307rd0vr3gqqaqbg95fg370crm9gb2pivyjp";
-    aarch64-linux = "05aglz26lcap3rkx8hv6ns1i6r1f54mn2m3lppjbxcvadlxjzgr0";
-    x86_64-darwin = "0r6nr8swkan2fgxk5jnpr24g9qs5haffhx9m2swqik9nckbg5s23";
-    aarch64-darwin = "0fmbqwqscrh1mrijd8jbnynrmlr753xfmqblbxxr9mb6hkb4w25x";
+    i686-linux = "16m03rpnm9y8vngmk4kwah536q1hkv33185dhrarcr9vl6jvy839";
+    x86_64-linux = "1zksvv7vd10y0h01vx0cqbxi9h8kghkf3bcvaj63zs0f381yc22k";
+    aarch64-linux = "1i9h2i6k82smjjva1cg14kw8vc2brh8fczvn745hc26phw5d9qnw";
+    x86_64-darwin = "14hgm8f3bkrk3wx2yw9fy2bah59mpgb36zw2r1wyrfyxzfx3hdjr";
+    aarch64-darwin = "0hbdlkw0cxrk7ly03grvw3kd8zlrx1dv5178vly1nx0bp6mn61wh";
   };
 
   urlMap = {
@@ -44,6 +44,8 @@ stdenvNoCC.mkDerivation {
   system = system;
 
   meta = {
+    description = "LoL Esports in your terminal";
+    homepage = "https://github.com/matthieugusmini/rift";
     license = lib.licenses.mit;
 
     sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
